@@ -52,7 +52,7 @@
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   var name = profile.getName();
-  localStorage.setItem("userLogged", name);
+  localStorage.setItem("dropdownMenuLink", name);
   window.location="index.html";
 }
 </script>
