@@ -6,6 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
+    <meta name="google-signin-client_id" content="17877244920-fnpdtd9sgdbgt4upndoipainqhdkdvga.apps.googleusercontent.com">
     <title>¡Hola! Ingresa tu usuario y contraseña</title>
 
     <link href="bootstrap.css" rel="stylesheet" type="text/css">
@@ -42,6 +43,8 @@
     </label>
   </div>
   <button class="btn btn-lg btn-primary btn-block" id="entrar" type="submit" formaction="index.html" >Ingresar</button>
+  <div class="g-signin2" data-onsuccess="onSignIn"></div>  
 </form>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 </body>
 </html>
