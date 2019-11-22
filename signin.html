@@ -49,7 +49,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script>
 
-if (auth2.isSignedIn.get()) {
+function onSignIn() {
   var profile = auth2.currentUser.get().getBasicProfile();
   console.log('ID: ' + profile.getId());
   console.log('Full Name: ' + profile.getName());
