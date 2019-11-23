@@ -6,12 +6,7 @@ const PRODUCT_INFO_URL = "https://api.myjson.com/bins/mad49";
 const CART_INFO_URL = "https://api.myjson.com/bins/aj865";
 const CART_BUY_URL = "https://api.myjson.com/bins/10ils5";
 
-function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {
-    console.log('User signed out.');
-  });
-}
+
 
 var showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
