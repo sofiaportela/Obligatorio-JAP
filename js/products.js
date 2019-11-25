@@ -1,3 +1,4 @@
+
 const ORDER_ASC_BY_PRICE = "Menor";
 const ORDER_DESC_BY_PRICE = "Mayor";
 const ORDER_BY_SOLD_COUNT = "Relevancia";
