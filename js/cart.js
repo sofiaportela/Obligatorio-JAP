@@ -10,6 +10,8 @@ const CREDIT_CARD_PAYMENT = "Tarjeta de crédito";
 const BANKING_PAYMENT = "Transferencia bancaria";
 let ERROR_MSG = "Ha habido un error :(, verifica qué pasó.";
 let PAYMENT_ERROR_MSG = "Por favor, selecciona una forma de pago.";
+let BANKING_INCOMPLETE_ERROR_MSG = "Ingresa los datos de tu Transferencia bancaria"
+let CREDIT_INCOMPLETE_ERROR_MSG = "Ingresa los datos de tu Tarjeta de crédito"
 
 //Función que se utiliza para actualizar los costos de la compra
 function updateTotalCosts(){
@@ -203,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         {
             numdecuenta.classList.add('is-invalid');
             infoMissing = true;
+            window.alert("Completa los datos de tu Transferencia bancaria");
         }
 
         //Cuando la forma de pago es Tarjeta de crédito consulto por número de tarjeta, código de seguridad y vencimiento
@@ -222,6 +225,11 @@ document.addEventListener("DOMContentLoaded", function(e){
         {
             vencimiento.classList.add('is-invalid');
             infoMissing = true;
+        }
+
+        if (paymentTypeSelected === CREDIT_CARD_PAYMENT && (vencimiento.value === "" || codigoseg.value === "" || numdetarjeta.value === ""))
+        {
+            window.alert("Completa los datos de tu Tarjeta de crédito");
         }
 
         
